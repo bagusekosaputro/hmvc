@@ -1,0 +1,36 @@
+body{
+	background:none;
+	margin:0;
+	padding:0;
+	border:0;
+	font:normal 0.9em/150% 'Arimo', "Trebuchet MS", arial, verdana, sans-serif;
+	text-shadow: 0px 0px 1px transparent; /* google font pixelation fix */
+	-webkit-font-smoothing:antialiased
+}
+.canvas {
+	width:900px;
+	margin:auto;
+	margin-top:110px;
+}
+#logo{
+	width:160px;
+	height:160px;
+	margin:auto;
+}
+#login-form {
+	padding:10px;
+	padding-top:25px;
+	width:250px;
+	height:120px;
+	border:0px solid;
+	border-color: #CCCCCC;
+	border-radius:5px;
+	margin:auto;
+	margin-bottom:15px;
+}
+p {
+	margin-top:20px;
+}
+button {
+	width:220px;
+}
