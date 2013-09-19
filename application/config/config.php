@@ -26,7 +26,7 @@ $config['base_url']	= '';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'modules/quiz/quiz';
+$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------
