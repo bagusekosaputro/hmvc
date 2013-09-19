@@ -4,7 +4,7 @@ class Quiz extends MX_Controller {
 
 	function __construct(){
 		parent::__construct();
-		$this->load->model('admin_model');
+		$this->load->model('modules/model');
 	}	
 	
 	public function index()
