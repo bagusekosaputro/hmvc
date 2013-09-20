@@ -1,4 +1,5 @@
 <!DOCTYPE HTML>
+<?php $this->load->view('headerfooter/header');?>
 <html>
 <head>
 	<meta charset="UTF-8">
@@ -9,30 +10,26 @@
 <body>
 	<table class="table table-bordered table-hover">
 	<tr>
-		<td>ID</td>
-		<td>Nama Admin</td>
-		<td>Email</td>
-		<td>No Telepon</td>
-		<td>Username</td>
-		<td>Password</td>
+		
+		<td>Judul Quiz</td>
+		<td>Tanggal</td>
+		<td>Pertanyaan</td>
+		<td>Pilihan Jawaban</td>
+		<td>Jawaban Benar</td>
+		<td>Tipe Pertanyaan</td>
 		<td>Aksi</td>
 	</tr>
 	<tr>
 		<?php foreach ($data as $row):?>
-		<td><?php echo $row->id_admin; ?></td>
-		<td><?php echo $row->nama_admin; ?></td>
-		<td><?php echo $row->email; ?></td>
-		<td><?php echo $row->no_telepon; ?></td>
-		<td><?php echo $row->username; ?></td>
-		<td><?php echo $row->password ?></td>
-		<td><a class="btn btn-primary" href="<?php echo site_url('admin/edit_admin/'.$row->id_admin);?>" title="Edit">
-				<i class="icon-edit icon-white"></i></a>
-				<a class="btn btn-danger" href="<?php echo site_url('admin/hapus_admin/'.$row->id_admin);?>" title="Hapus" 
-				onclick="return confirm('Anda Yakin ?');"><i class="icon-remove icon-white"></i></a>	
-		</td>
+		<td><?php echo $row->judul; ?></td>
+		<td><?php echo $row->tanggal; ?></td>
+		<td><?php echo $row->pertanyaan; ?></td>
+		<td><?php echo $row->pilihan_jawaban; ?></td>
+		<td><?php echo $row->jawaban_benar; ?></td>
+		<td><?php echo $row->tipe_pertanyaan?></td>
 	</tr>
 		<?php endforeach; ?>
 	</table>
-	<a class="btn btn-link" href="<?php echo site_url('admin/tambah_view')?>">Tambah</button>
+	<?php echo anchor('quiz/tambah_quiz', 'Tambah') ;?>
 </body>
 </html>

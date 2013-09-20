@@ -38,10 +38,6 @@
 		 <div class="nav-collapse collapse">
 			<ul class="nav">
 				<li><a href="#">Home</a></li>
-				<li><a href="#">Kegiatan</a></li>
-				<li><a href="#">Keuangan</a></li>
-				<li><a href="#">Kontak</a></li>
-				<li><a href="<?php echo base_url();?>ac_login/logout">Logout</a></li>
 			</ul>
 		</div>
 		</div>
