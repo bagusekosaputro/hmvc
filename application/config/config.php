@@ -14,9 +14,8 @@
 | path to your installation.
 |
 */
-$config['base_url']	= '';
+$config['base_url']	= 'http://localhost/hmvc';
 
-$config['modules_locations'] = array(APPPATH.'modules_core/' => '../../modules/',);
 
 /*
 |--------------------------------------------------------------------------
@@ -358,7 +357,7 @@ $config['rewrite_short_tags'] = FALSE;
 |
 */
 $config['proxy_ips'] = '';
-
+$config['modules_locations'] = array(APPPATH.'modules/' => '../modules/',);
 
 /* End of file config.php */
 /* Location: ./application/config/config.php */
