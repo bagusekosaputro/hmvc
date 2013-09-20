@@ -16,6 +16,8 @@
 */
 $config['base_url']	= '';
 
+$config['modules_locations'] = array(APPPATH.'modules_core/' => '../../modules/',);
+
 /*
 |--------------------------------------------------------------------------
 | Index File
